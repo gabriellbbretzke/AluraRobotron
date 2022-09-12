@@ -1,2 +1,1 @@
-# AluraRobotron
-Exercícios realizado nas aulas de Javascript
+# robotron-2000
