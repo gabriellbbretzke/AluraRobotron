@@ -38,12 +38,11 @@ main {
 }
 
 .robo {
-    height: 110%;
+    height: 20%;
     z-index: 1;
     position: absolute;
-    left: -20%;
-    top: -5%;
-    display: none;
+    left: 50%;
+    top: 5%;
 }
 
 .titulo {
@@ -64,6 +63,18 @@ main {
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
     height: 80%;
+}
+
+.alterar {
+    margin: 2px;
+    width: 200px;
+}
+
+.botoes {
+   position: relative;
+   right: 5%;
+   bottom: 10%;
+   display: flex;
 }
 
 /****************************** Equipamentos *****/
