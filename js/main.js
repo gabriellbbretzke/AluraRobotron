@@ -1,5 +1,6 @@
 const controle = document.querySelectorAll("[data-controle]");
 const estatisticas = document.querySelectorAll("[data-estatistica]")
+const imgRobotron = document.querySelector("#robotron")
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -40,9 +41,6 @@ controle.forEach ( (e) => {
     })
 })
 
-// somar.addEventListener("click", function () {manipulaDados("somar")})
-// subtrair.addEventListener("click", function () {manipulaDados("subtrair")})
-
 function manipulaDados(operacao, controle) {
     const peca = controle.querySelector("[data-contador]")
 
@@ -58,3 +56,35 @@ function atualizaEstatisticas(peca) {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 }
+
+/*-------------------------------- MINHA SOLUÇÃO-------------------------*/
+// imgRobotron.addEventListener("click", trocaRobo);
+// const coresRobotron = [
+//     {cor:'normal', 
+//         src:'img/robotron.png'},
+//     {cor:'vermelho', 
+//         src:'img/robotronvermelho.png'},
+//     {cor:'amarelo',
+//         src:'img/robotronamarelo.png'},
+//     {cor:'azul',
+//         src: 'img/robotronazul.png'},
+//     {cor:'branco',
+//         src:'img/robotronbranco.png'},
+//     {cor:'preto',
+//         src:'img/robotronpreto.png'},
+//     {cor:'rosa',
+//         src: 'img/robotronrosa.png'},
+// ]
+
+// function trocaRobo() {
+//     var i = Math.floor(Math.random() * 8);
+//     imgRobotron.src = coresRobotron[i].src;
+//     return;
+// }
+/*-------------------------------- FIM MINHA SOLUÇÃO-------------------------*/
+
+/*--------SOLUÇÃO DO PROFESSOR---------------------*/
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
+ }
+ /*-------- FIM SOLUÇÃO DO PROFESSOR---------------------*/
